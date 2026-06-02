@@ -1,13 +1,14 @@
 body{
-background: #ffffff;
-background: linear-gradient(140deg, rgba(255, 255, 255, 1) 0%, rgba(254, 255, 247, 1) 21%, rgba(255, 255, 247, 1) 54%, rgba(252, 251, 247, 1) 74%, rgba(255, 253, 237, 1) 85%);    display: flex;
+    background: #ffffff;
+    background: linear-gradient(147deg, rgba(255, 255, 255, 1) 17%, rgba(165, 229, 250, 1) 21%, rgba(189, 235, 255, 1) 29%, rgba(166, 240, 255, 1) 37%, rgba(191, 255, 255, 1) 49%, rgba(168, 241, 255, 1) 58%, rgba(217, 249, 255, 1) 70%, rgba(255, 255, 255, 1) 84%);
+    display: flex;
     justify-content: center;
     align-items: end;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
-/* div{
-    border: 1px black solid;
-} */
 
 .button{
     font-size: 30px;
@@ -58,4 +59,32 @@ background: linear-gradient(140deg, rgba(255, 255, 255, 1) 0%, rgba(254, 255, 24
     background-color: aliceblue;
     margin: 2px;
     font-size: 50px;
+}
+
+@media(max-width: 500px){
+    #calculator{
+        max-width: 300px;
+        max-height: 460px;
+    }
+    #buttons{
+        max-width: 300px
+    }
+
+    .button{
+        max-width: 50px;
+        max-height: 60px;
+        font-size: 22px
+    }
+    .button:hover{
+    font-size: 25px;
+    }
+
+    .button:active{
+        background-color: rgb(100, 100, 100);
+        color: whitesmoke;
+    }
+
+    .button:after{
+        font-size: 22px;
+    }
 }
