@@ -18,7 +18,9 @@ body{
     box-shadow: grey 0px 2px 2px 0px;
 }
 .button:hover{
-    font-size: 40px;
+    font-size: 32px;
+    background-color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
 }
 
 .button:active{

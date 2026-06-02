@@ -31,9 +31,12 @@ function calculate(){
 
 function isCorrectFormat(exp){
     if(isNaN(Number(exp[exp.length - 1]))){
-        display.textContent = "Error"
-        // display.textContent = ''
-        return false
+        if(exp[len(exp) - 1] == '%'){return true}
+        else{
+            display.textContent = "Error"
+            // display.textContent = ''
+            return false
+        }
     }
     if(isNaN(Number(exp[0]))){
         if(exp[0] == '-'){
